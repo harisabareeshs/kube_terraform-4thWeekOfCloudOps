@@ -1,8 +1,8 @@
 terraform {
   backend "s3" {
-    bucket = "learning-terraform"
-    key    = "backend/Todo-app-eks.tfstate"
-    region = "us-east-1"
+    bucket = "solinas-terraform"
+    key    = "backend/solinas.tfstate"
+    region = "us-west-2"
     dynamodb_table = "dynamoDB-state-locking"
   }
 }
